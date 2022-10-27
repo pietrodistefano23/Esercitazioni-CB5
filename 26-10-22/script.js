@@ -16,9 +16,9 @@ up = up.toUpperCase();
 datiArr.splice(0,2, up);
 console.log(datiArr);
 
+//######Esercizio 3#############
 let num = 7;
 let src = "";
-
 for(let i=0;i<num;i++){
     for(let j=0;j<num-i;j++){
         src += "#";
