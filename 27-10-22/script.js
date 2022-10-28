@@ -32,8 +32,10 @@ let superHero = {
 
 //console.log(superHero);
 //console.log(superHero.specialGift[2]);
-const superHeroKeys = Object.keys(superHero);
-console.log(superHeroKeys);
+//const superHeroKeys = Object.keys(superHero);
+//console.log(superHeroKeys);
+
+
 
 
 
