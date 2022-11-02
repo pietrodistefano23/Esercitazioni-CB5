@@ -120,7 +120,7 @@ const products = [
         }
     }
 ]
-/*
+/* UTILIZZANDO .MAP
 products.map( (product) => {
     console.log(product.title);
     console.log(product.price);
@@ -130,6 +130,7 @@ products.map( (product) => {
 */
 //product è la mia funzione callback
 
+//UTILIZZANDO .FOREACH
 products.forEach((element) => {
     console.log(element.title);
     console.log(element.price);
@@ -137,3 +138,4 @@ products.forEach((element) => {
 }
 
 )
+// element è la mia funzione callback
