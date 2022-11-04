@@ -30,7 +30,7 @@ const cardCreated = ( title, imgUrl, imgAlt, description, price, rating, divCont
     card.append(titleCard, imgCard, descriptionCard, priceCard, ratingCard);
     switch(divContainer){
         case "rate":
-            divRate.appendChild(card)
+            divRate.appendChild(card);
             break;
         case "price":
             divPrice.appendChild(card);
@@ -44,14 +44,14 @@ const cardCreated = ( title, imgUrl, imgAlt, description, price, rating, divCont
 
 }
  const bestRated = products.filter((element) => element.rating.rate > 3 );
- console.log(bestRated);
+
 
  for(let item of bestRated){
     cardCreated(item.title,item.image,item.title,item.description,item.price,item.rating.rate,"rate")
    }
 
    const bestPrice = products.filter((element) => element.price > 20 );
-   for(let item of bestRated){
+   for(let item of bestPrice){
     cardCreated(item.title,item.image,item.title,item.description,item.price,item.rating.rate,"price")
    }
 
