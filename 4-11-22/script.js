@@ -77,7 +77,7 @@ const cardCreated = ( imgUrl, num, name,  type  )=>{
     
 };
 
-fetch("https://pokeapi.co/api/v2/pokemon?limit=150")
+/*fetch("https://pokeapi.co/api/v2/pokemon?limit=150")
     .then((response) => response.json())
     .then((poke) => {
        
@@ -90,6 +90,37 @@ fetch("https://pokeapi.co/api/v2/pokemon?limit=150")
        )))  
     });
     
-   
+   */
+
+    for (let index = 1; index <= 151; index++) {
+        pokemons.push(`https://pokeapi.co/api/v2/pokemon/${index}/`);
+      }
+      
+      let request = pokemons.map((url) => {
+        return fetch(url).then((res) => res.json());
+      });
+      
+      
+      Promise.all(request)
+        .then((res) =>
+          res?.map((pokemon) => {
+            if (!pokemon) {
+              console.log("Error: Pokemon doesn't exist")
+              return null;
+            };
+      
+            return createCard(
+                pokemon.sprites.back_default
+                 ,pokemon.id, 
+                 pokemon.name,
+                 pokemon.types[0].type.name
+              
+            )
+          }
+      
+          )
+        ); 
+      
+      
 
    
