@@ -33,10 +33,10 @@ for(let i=0;i<=150;i++){
     urlArray.push(`https://pokeapi.co/api/v2/pokemon/${i}`)
 }
 
-let request = urlArray.map( (url)=>{
-    return fetch(url)
-    .then((res)=>res.json());
-});
+let request = urlArray.map((res)=>
+     fetch(res)
+    .then((resp)=>resp.json())
+);
 
 Promise.all(request).then((res)=>res.map((r) => cardCreated(r)));
 
