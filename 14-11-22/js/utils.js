@@ -12,4 +12,4 @@ const getId = (n) =>{
         return id 
 }
 
-export {GET,getId};
+export{GET,getId};
