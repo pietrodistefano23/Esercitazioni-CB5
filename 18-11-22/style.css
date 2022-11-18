@@ -1,0 +1,81 @@
+html,
+body{
+   
+   
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 22px solid black;
+    
+    justify-content:center ;
+    align-items: center;
+    background-color: #ff1f1f;
+    width: 100%;
+    
+    
+}
+
+  form{
+    display: flex;
+    flex-direction: column;
+   padding: 10px;
+   border-radius: 10px;
+   border: 2px solid black;
+   margin-bottom: 20px;
+  }  
+    
+   form input{
+        border:2px solid black ;
+        border-radius: 13px;
+        padding-left: 15px;
+    }
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+    
+}
+li{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    box-sizing: border-box;
+    background-color: rgb(31, 30, 30) ;
+    border-radius: 20px;
+    width: 150px;
+    padding: 3px;
+}
+.name{
+    background-color: #ff1f1f;
+    margin-bottom:-10px ;
+}
+li p{
+    
+    padding: 2px 15px;
+    border-top: 2px;
+    border-radius: 5px;
+    background-color: 	#ffff;
+}
+
+.btnDelete{
+    background-color: #ff1f1f;
+}
+
+.buttonContainer{
+    display: flex;
+    
+}
+

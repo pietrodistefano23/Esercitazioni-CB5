@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="form">
+        <h1>Pokémon</h1>
+        <form name="pokemon" autocomplete="off">
+          <input type="text" placeholder="Pokemon name" name="name">
+          <input type="text" required="" placeholder="Pokemon type" name="type">
+          <input type="submit" class="btn-submit" value="Save">
+        </form>
+  
+        <form name="pokemonPatch" autocomplete="off">
+          <input type="text" placeholder="Insert Id.." name="id">
+          <input type="text" placeholder="Insert Name.." name="name">
+          <input type="text" placeholder="Insert Type.." name="type">
+          <input type="submit" value="Modify">
+        </form>
+      </section>
+      <section class="cards">
+        <h2>Lista Pokémon</h2>
+        <ul class="cards__list">
+          
+        </ul>
+      </section>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/utils.js" type="module"></script>
+    <script src="./js/api.js" type="module"></script>
+</body>
+</html>
