@@ -1,0 +1,11 @@
+[
+    {"id":1,
+    "nome":"Paolo",
+    "cognome":"Sorrentino",
+    "data_nascita":"03/07/1972",
+    "riconoscimenti":"Elenco premi vinti",
+    "inizio_attivita":"1998",
+    "fine_attività":"",
+    "in_attivita":true
+    }
+    ]
