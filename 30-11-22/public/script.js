@@ -1,5 +1,4 @@
-const url_actor= "https://localhost:3000/attori"
-console.log("2");
+const url_actor= "http://localhost:3000/attori"
 // const GET = async (url) => {
 // 	const res = await fetch(url);
 // 	return await res.json();
@@ -27,7 +26,7 @@ const DELETE = async (url,id) => {
 	return await res.json();
 };
 
-const cardContainer = document.querySelector ("containerCard")
+const cardContainer = document.querySelector (".containerCard")
 const createAct=(data)=>{
 	
     const cardEL= document.createElement ("div");
@@ -50,25 +49,14 @@ const createAct=(data)=>{
 	deleteEl.className = "delete"
     deleteEl.textContent = "Delete";
 
-	const DELETE = async (url,id) => {
-		const res = await fetch(url,{
-			method: "DELETE",
-			headers: {
-				"Content-Type": "application/x-www-form-urlencoded"
-			},
-			body: new URLSearchParams({'id':id})
-		});
-		return await res.json();
-	};
+	
 
 	deleteEl.addEventListener("click", (e) => {
 		const url = `http://localhost:3000/attore`;
-		const id = actor.id;
+		const id = data.id;
 		DELETE(url, id)
 		.then(() => location.reload())
 	  });
-
-
 
     cardEL.append(nome,cognome,data_nascita,deleteEl, modEl);
     cardContainer.append (cardEL);
@@ -102,4 +90,6 @@ function createActor(body_message) {
 	 	const res = await fetch(url);
 	 	return await res.json();
 	 }
-  window.onload = GET(url_actor).then(res => res.map(actor => createCard(actor)));
+  window.onload = GET(url_actor).then(res => res.map(actor => createAct(actor)));
+	
+   

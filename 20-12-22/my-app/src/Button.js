@@ -1,12 +1,27 @@
+const buttonVariantMap = {
+    primary: 'text-xl color-pink',
+    secondary: 'text-sm color-red'
+  }
 
+export function Button(props){
+    console.log("props di button" ,props );
 
-function Button(){
+    const { 
+        className = '',
+        children = 'Non ho {children}',
+        variant = 'none',
+        ...otherAttributes
+      } = props;
+    
     return(
-        <button className="appButton" onClick={console.log("Hello World")}>
-        Click me
-        </button>
-    );
-
+        <button
+          className={`${variant} ${className}`}
+          {...otherAttributes}
+      >
+        {children}
+      </button>
+  );
 }
 
-export default Button ;
+
+

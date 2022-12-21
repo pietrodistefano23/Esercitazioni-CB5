@@ -7,7 +7,7 @@
 
 
 
-.App-header {
+.App {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -21,5 +21,13 @@
 .appButton{
   padding: 10px;
   border-radius: 10px;
+}
+
+.primary{
+  background-color:rebeccapurple ;
+  margin-top: 3%;
+}
+.secondary{
+  background-color: transparent;
 }
 
