@@ -1,0 +1,16 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.Nav li{
+    list-style: none;
+    
+}
