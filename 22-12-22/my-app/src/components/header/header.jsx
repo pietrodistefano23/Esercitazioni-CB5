@@ -1,6 +1,6 @@
 import './/header.css'
 
-export const Header = () => {
+export function Header  (props)  {
     const menuItems = [
         {label : 'Home', href : '#header'},
         {label : 'Main Content', href : '#main'},
@@ -8,8 +8,8 @@ export const Header = () => {
     ]
 
     return <header className="Header">
-        <div className="container">
-            <h1>Welcome</h1>
+        <div className="container" >
+            <h1>Welcome, {props.name}</h1>
         </div>
         <nav className="Nav">
             {

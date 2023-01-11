@@ -1,8 +1,11 @@
 .Header{
     display: flex;
     justify-content: space-between;
+    font-size: 15px;
     
-    
+}
+.container{
+    width: 40vw;
 }
 .Nav{
     display: flex;

@@ -1,5 +1,5 @@
 import './App.css';
-import { Button } from './Button';
+import { Button } from '../src/';
 import { Text } from './text';
 export function App() {
 
