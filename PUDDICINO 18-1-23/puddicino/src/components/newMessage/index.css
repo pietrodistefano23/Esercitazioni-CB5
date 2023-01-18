@@ -12,10 +12,18 @@
 }
 .NewMessage form input {
     height: 20px;
-    border-radius: 20px;
+    border: none;
+    border-radius: 10px;
     padding: 5px 0px 5px 10px;
     justify-content: center;
-    background-color: #D2D0F5;
+    background-color: #ffffff;
     color: #6D6875;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);; 
+}
+.sub{
+    
+    width: 70px;
+    height: 30px !important;
+    display: flex;
+    align-items: center;
 }
