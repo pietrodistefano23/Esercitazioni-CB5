@@ -1,0 +1,45 @@
+
+.Message {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom:2px solid black  ;
+    font-size: 12px;
+    color: aliceblue;
+}
+.MessageContainer img {
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 100%;
+    border: 1px groove;
+    background-color: #EDEEF3;
+}
+.userId{
+    color: #653780;
+    width: fit-content;
+} 
+.MessageContainer{
+    display: flex;
+}
+.MessageText{
+    display: flex;
+    justify-self: center;
+    align-content: center;
+    padding-left: 5px;
+}
+.Like{
+    background-color: #653780;
+    border: none;
+}
+.buttonContainer img{
+    width: 50px;
+    height: 50px;
+    background-color: #653780;
+    border: none;
+    
+
+}
+svg{
+    width: 50px;
+    background-color: #653780;
+}
