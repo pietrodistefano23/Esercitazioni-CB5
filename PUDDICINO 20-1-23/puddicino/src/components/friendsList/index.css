@@ -1,0 +1,11 @@
+
+.FriendsList {
+    height: 80px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    width: 100vw;
+    padding: 10px 75px ;
+    gap: 15px
+}

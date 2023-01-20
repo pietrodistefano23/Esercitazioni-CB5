@@ -1,0 +1,41 @@
+
+.MainLayout {
+}
+
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+}
+.logo{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+}
+.logo img{
+    max-width: 80%;
+
+    background-color: #221f1f;
+}
+
+nav {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    font-size: 14px;
+    gap: 10px;
+}
+
