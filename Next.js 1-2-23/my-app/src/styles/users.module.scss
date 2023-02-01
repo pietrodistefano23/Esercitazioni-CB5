@@ -1,0 +1,14 @@
+.Users{
+    background-color:#FDF8E2 ;
+    ;
+    .Container{
+       padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       img{
+        width: 50px;
+    }
+    }
+   
+}
