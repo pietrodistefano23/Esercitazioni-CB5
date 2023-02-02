@@ -1,0 +1,7 @@
+html,body{
+  background-color: #2f2f2c;
+  color: aliceblue;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+}
