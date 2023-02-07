@@ -1,0 +1,26 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    height: 140px;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      input {
+        height: 80px;
+        width: 80%;
+        padding: 0 0 0 30px;
+        background-color: #450663;
+        color: white;
+        border: 0;
+        border-radius: 80px;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 3rem;
+        outline: none;
+        opacity: 0.8;
+      }
+    }
+  }
